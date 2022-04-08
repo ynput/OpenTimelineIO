@@ -91,7 +91,7 @@ jobs:
           CIBW_SKIP: cp27-win*
           CIBW_BUILD: ${{ matrix.python-build }}
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: wheels
           path: ./wheelhouse/*.whl
